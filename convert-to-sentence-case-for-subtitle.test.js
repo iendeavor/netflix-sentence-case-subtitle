@@ -23,12 +23,12 @@ const suits = [
 <div class="player-timedtext">
   <div class="player-timedtext-text-container">
     <span>
-      <span>It doesn't make</span>
+      <span class="sentence-case">It doesn't make</span>
     </span>
   </div>
   <div class="player-timedtext-text-container">
     <span>
-      <span>much of a difference.</span>
+      <span class="sentence-case">much of a difference.</span>
     </span>
   </div>
 </div>
@@ -49,8 +49,8 @@ const suits = [
 <div class="player-timedtext">
   <div class="player-timedtext-text-container">
     <span>
-      <span>Have</span>
-      <span>a restaurant</span>
+      <span class="sentence-case">Have</span>
+      <span class="sentence-case">a restaurant</span>
     </span>
   </div>
 </div>

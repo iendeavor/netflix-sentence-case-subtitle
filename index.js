@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Netflix sentence-case subtitle
 // @namespace    https://github.com/iendeavor/netflix-sentence-case-subtitle
-// @version      0.1.1
+// @version      0.1.2
 // @description  Convert Netflix subtitles to sentence-case
 // @author       Ernest
 // @match        https://www.netflix.com/*

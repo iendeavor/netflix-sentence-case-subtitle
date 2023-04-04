@@ -10,13 +10,13 @@ function convertToSentenceCaseForSubtitle(playerTimedtextEl) {
     .flat()
     .map((child) => [...child.children])
     .flat();
+  if (leafs.some((leaf) => leaf.classList.contains("sentence-case"))) return;
   const subtitle = convertToSentenceCase(
     leafs.map((leaf) => leaf.innerHTML).join("\n")
   ).split("\n");
   leafs.forEach((leaf, index) => {
-    if (leaf.textContent) {
-      leaf.innerHTML = subtitle[index];
-    }
+    leaf.classList.add("sentence-case");
+    leaf.innerHTML = subtitle[index];
   });
 }
 
