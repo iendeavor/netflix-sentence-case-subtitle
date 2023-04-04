@@ -34,6 +34,28 @@ const suits = [
 </div>
     `.trim(),
   },
+  {
+    input: `
+<div class="player-timedtext">
+  <div class="player-timedtext-text-container">
+    <span>
+      <span>HAVE</span>
+      <span>A RESTAURANT</span>
+    </span>
+  </div>
+</div>
+    `.trim(),
+    output: `
+<div class="player-timedtext">
+  <div class="player-timedtext-text-container">
+    <span>
+      <span>Have</span>
+      <span>a restaurant</span>
+    </span>
+  </div>
+</div>
+    `.trim(),
+  },
 ];
 
 suits.forEach((suit, index) => {

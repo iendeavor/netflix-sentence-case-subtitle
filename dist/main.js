@@ -14,7 +14,7 @@ function convertToSentenceCaseForSubtitle(playerTimedtextEl) {
   const leafs = [...playerTimedtextEl.children]
     .map((child) => child.children[0])
     .flat()
-    .map((child) => child.children[0])
+    .map((child) => [...child.children])
     .flat();
   const subtitle = convertToSentenceCase(
     leafs.map((leaf) => leaf.innerHTML).join("\n")
@@ -85,7 +85,7 @@ var __webpack_exports__ = {};
 // ==UserScript==
 // @name         Netflix sentence-case subtitle
 // @namespace    https://github.com/iendeavor/netflix-sentence-case-subtitle
-// @version      0.1.0
+// @version      0.1.1
 // @description  Convert Netflix subtitles to sentence-case
 // @author       Ernest
 // @match        https://www.netflix.com/*

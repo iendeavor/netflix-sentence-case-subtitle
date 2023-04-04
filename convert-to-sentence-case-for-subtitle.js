@@ -8,7 +8,7 @@ function convertToSentenceCaseForSubtitle(playerTimedtextEl) {
   const leafs = [...playerTimedtextEl.children]
     .map((child) => child.children[0])
     .flat()
-    .map((child) => child.children[0])
+    .map((child) => [...child.children])
     .flat();
   const subtitle = convertToSentenceCase(
     leafs.map((leaf) => leaf.innerHTML).join("\n")
